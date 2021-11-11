@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.4.1">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">true</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Test Fragment : Login" enabled="false"/>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Pre Login" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Post Login" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+      </hashTree>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Test Fragment : product detail" enabled="false"/>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Product Detail Page" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+      </hashTree>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <stringProp name="HTTPSampler.domain">${Page}</stringProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <stringProp name="HTTPSampler.protocol"></stringProp>
+        <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+        <stringProp name="HTTPSampler.path"></stringProp>
+        <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+        <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+        <stringProp name="HTTPSampler.response_timeout"></stringProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="Page" elementType="Argument">
+            <stringProp name="Argument.name">Page</stringProp>
+            <stringProp name="Argument.value">shopee.vn</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group 01 : Add wishlist" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller" enabled="true">
+          <collectionProp name="ModuleController.node_path">
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="-1409338399">Test Fragment : Login</stringProp>
+          </collectionProp>
+        </ModuleController>
+        <hashTree/>
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller" enabled="true">
+          <collectionProp name="ModuleController.node_path">
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="7900938">Test Fragment : product detail</stringProp>
+          </collectionProp>
+        </ModuleController>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Add to wishlist" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/2</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group 02: Place Order" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller" enabled="true">
+          <collectionProp name="ModuleController.node_path">
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="-1409338399">Test Fragment : Login</stringProp>
+          </collectionProp>
+        </ModuleController>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Search Product" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller" enabled="true">
+          <collectionProp name="ModuleController.node_path">
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="7900938">Test Fragment : product detail</stringProp>
+          </collectionProp>
+        </ModuleController>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Add to cart" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Place order" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group 03: Update Account Info" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller" enabled="true">
+          <collectionProp name="ModuleController.node_path">
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="-1409338399">Test Fragment : Login</stringProp>
+          </collectionProp>
+        </ModuleController>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Account management" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Edit account information" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+      </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="Simple Data Writer" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename">D:\NewFolder\pre Login.jmx</stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
+1636648804144,1784,Pre Login,200,OK,Thread Group 01 : Add wishlist 1-1,text,true,,149757,222,1,1,https://shopee.vn/,133,0,74
+1636648804144,133,Pre Login-0,307,Temporary Redirect,Thread Group 01 : Add wishlist 1-1,text,true,,349,111,1,1,http://shopee.vn/,133,0,74
+1636648804279,1649,Pre Login-1,200,OK,Thread Group 01 : Add wishlist 1-1,text,true,,149408,111,1,1,https://shopee.vn/,1186,0,472
+1636648805936,680,Post Login,200,OK,Thread Group 01 : Add wishlist 1-1,text,true,,149770,222,1,1,https://shopee.vn/,57,0,0
+1636648805936,57,Post Login-0,307,Temporary Redirect,Thread Group 01 : Add wishlist 1-1,text,true,,349,111,1,1,http://shopee.vn/,57,0,0
+1636648805993,623,Post Login-1,200,OK,Thread Group 01 : Add wishlist 1-1,text,true,,149421,111,1,1,https://shopee.vn/,321,0,0
+1636648806617,666,Product Detail Page,200,OK,Thread Group 01 : Add wishlist 1-1,text,true,,149757,222,1,1,https://shopee.vn/,58,0,0
+1636648806617,58,Product Detail Page-0,307,Temporary Redirect,Thread Group 01 : Add wishlist 1-1,text,true,,349,111,1,1,http://shopee.vn/,58,0,0
+1636648806675,608,Product Detail Page-1,200,OK,Thread Group 01 : Add wishlist 1-1,text,true,,149408,111,1,1,https://shopee.vn/,309,0,0
+1636648807284,329,Add to wishlist,200,OK,Thread Group 01 : Add wishlist 1-1,text,true,,37168,350,1,1,https://shopee.vn/2?__classic__=1,58,0,0
+1636648807284,58,Add to wishlist-0,307,Temporary Redirect,Thread Group 01 : Add wishlist 1-1,text,true,,350,112,1,1,http://shopee.vn/2,58,0,0
+1636648807343,99,Add to wishlist-1,302,Found,Thread Group 01 : Add wishlist 1-1,text,true,,479,112,1,1,https://shopee.vn/2,99,0,0
+1636648807442,171,Add to wishlist-2,200,OK,Thread Group 01 : Add wishlist 1-1,text,true,,36339,126,1,1,https://shopee.vn/2?__classic__=1,112,0,0
+1636648807618,840,Pre Login,200,OK,Thread Group 02: Place Order 2-1,text,true,,149770,222,1,1,https://shopee.vn/,113,0,57
+1636648807618,113,Pre Login-0,307,Temporary Redirect,Thread Group 02: Place Order 2-1,text,true,,349,111,1,1,http://shopee.vn/,113,0,57
+1636648807732,726,Pre Login-1,200,OK,Thread Group 02: Place Order 2-1,text,true,,149421,111,1,1,https://shopee.vn/,295,0,160
+1636648808458,489,Post Login,200,OK,Thread Group 02: Place Order 2-1,text,true,,149757,222,1,1,https://shopee.vn/,58,0,0
+1636648808458,58,Post Login-0,307,Temporary Redirect,Thread Group 02: Place Order 2-1,text,true,,349,111,1,1,http://shopee.vn/,58,0,0
+1636648808516,431,Post Login-1,200,OK,Thread Group 02: Place Order 2-1,text,true,,149408,111,1,1,https://shopee.vn/,114,0,0
+1636648808948,377,Search Product,200,OK,Thread Group 02: Place Order 2-1,text,true,,149770,222,1,1,https://shopee.vn/,64,0,0
+1636648808948,64,Search Product-0,307,Temporary Redirect,Thread Group 02: Place Order 2-1,text,true,,349,111,1,1,http://shopee.vn/,64,0,0
+1636648809012,313,Search Product-1,200,OK,Thread Group 02: Place Order 2-1,text,true,,149421,111,1,1,https://shopee.vn/,103,0,0
+1636648809325,576,Product Detail Page,200,OK,Thread Group 02: Place Order 2-1,text,true,,149757,222,1,1,https://shopee.vn/,57,0,0
+1636648809325,57,Product Detail Page-0,307,Temporary Redirect,Thread Group 02: Place Order 2-1,text,true,,349,111,1,1,http://shopee.vn/,57,0,0
+1636648809382,519,Product Detail Page-1,200,OK,Thread Group 02: Place Order 2-1,text,true,,149408,111,1,1,https://shopee.vn/,263,0,0
+1636648809902,362,Add to cart,200,OK,Thread Group 02: Place Order 2-1,text,true,,149770,222,1,1,https://shopee.vn/,56,0,0
+1636648809902,56,Add to cart-0,307,Temporary Redirect,Thread Group 02: Place Order 2-1,text,true,,349,111,1,1,http://shopee.vn/,56,0,0
+1636648809959,305,Add to cart-1,200,OK,Thread Group 02: Place Order 2-1,text,true,,149421,111,1,1,https://shopee.vn/,96,0,0
+1636648810264,327,Place order,200,OK,Thread Group 02: Place Order 2-1,text,true,,149770,222,1,1,https://shopee.vn/,57,0,0
+1636648810264,57,Place order-0,307,Temporary Redirect,Thread Group 02: Place Order 2-1,text,true,,349,111,1,1,http://shopee.vn/,57,0,0
+1636648810321,270,Place order-1,200,OK,Thread Group 02: Place Order 2-1,text,true,,149421,111,1,1,https://shopee.vn/,116,0,0
+1636648810596,420,Pre Login,200,OK,Thread Group 03: Update Account Info 3-1,text,true,,28181,222,1,1,https://shopee.vn/,115,0,57
+1636648810596,115,Pre Login-0,307,Temporary Redirect,Thread Group 03: Update Account Info 3-1,text,true,,349,111,1,1,http://shopee.vn/,115,0,57
+1636648810712,304,Pre Login-1,200,OK,Thread Group 03: Update Account Info 3-1,text,true,,27832,111,1,1,https://shopee.vn/,303,0,184
+1636648811016,657,Post Login,200,OK,Thread Group 03: Update Account Info 3-1,text,true,,149770,222,1,1,https://shopee.vn/,57,0,0
+1636648811016,57,Post Login-0,307,Temporary Redirect,Thread Group 03: Update Account Info 3-1,text,true,,349,111,1,1,http://shopee.vn/,57,0,0
+1636648811074,599,Post Login-1,200,OK,Thread Group 03: Update Account Info 3-1,text,true,,149421,111,1,1,https://shopee.vn/,171,0,0
+1636648811674,704,Account management,200,OK,Thread Group 03: Update Account Info 3-1,text,true,,149770,222,1,1,https://shopee.vn/,57,0,0
+1636648811674,57,Account management-0,307,Temporary Redirect,Thread Group 03: Update Account Info 3-1,text,true,,349,111,1,1,http://shopee.vn/,57,0,0
+1636648811731,647,Account management-1,200,OK,Thread Group 03: Update Account Info 3-1,text,true,,149421,111,1,1,https://shopee.vn/,345,0,0
+1636648812379,411,Edit account information,200,OK,Thread Group 03: Update Account Info 3-1,text,true,,149770,222,1,1,https://shopee.vn/,57,0,0
+1636648812379,57,Edit account information-0,307,Temporary Redirect,Thread Group 03: Update Account Info 3-1,text,true,,349,111,1,1,http://shopee.vn/,57,0,0
+1636648812436,354,Edit account information-1,200,OK,Thread Group 03: Update Account Info 3-1,text,true,,149421,111,1,1,https://shopee.vn/,107,0,0
+1636648843901,970,Pre Login,200,OK,Thread Group 01 : Add wishlist 1-1,text,true,,149770,222,1,1,https://shopee.vn/,125,0,68
+1636648843901,125,Pre Login-0,307,Temporary Redirect,Thread Group 01 : Add wishlist 1-1,text,true,,349,111,1,1,http://shopee.vn/,125,0,68
+1636648844027,844,Pre Login-1,200,OK,Thread Group 01 : Add wishlist 1-1,text,true,,149421,111,1,1,https://shopee.vn/,629,0,162
+1636648844871,724,Post Login,200,OK,Thread Group 01 : Add wishlist 1-1,text,true,,149757,222,1,1,https://shopee.vn/,57,0,0
+1636648844871,57,Post Login-0,307,Temporary Redirect,Thread Group 01 : Add wishlist 1-1,text,true,,349,111,1,1,http://shopee.vn/,57,0,0
+1636648844929,666,Post Login-1,200,OK,Thread Group 01 : Add wishlist 1-1,text,true,,149408,111,1,1,https://shopee.vn/,398,0,0
+1636648845595,324,Product Detail Page,200,OK,Thread Group 01 : Add wishlist 1-1,text,true,,149770,222,1,1,https://shopee.vn/,60,0,0
+1636648845595,60,Product Detail Page-0,307,Temporary Redirect,Thread Group 01 : Add wishlist 1-1,text,true,,349,111,1,1,http://shopee.vn/,60,0,0
+1636648845655,264,Product Detail Page-1,200,OK,Thread Group 01 : Add wishlist 1-1,text,true,,149421,111,1,1,https://shopee.vn/,104,0,0
+1636648845919,771,Add to wishlist,200,OK,Thread Group 01 : Add wishlist 1-1,text,true,,37168,350,1,1,https://shopee.vn/2?__classic__=1,67,0,0
+1636648845919,67,Add to wishlist-0,307,Temporary Redirect,Thread Group 01 : Add wishlist 1-1,text,true,,350,112,1,1,http://shopee.vn/2,67,0,0
+1636648845986,568,Add to wishlist-1,302,Found,Thread Group 01 : Add wishlist 1-1,text,true,,479,112,1,1,https://shopee.vn/2,568,0,0
+1636648846554,136,Add to wishlist-2,200,OK,Thread Group 01 : Add wishlist 1-1,text,true,,36339,126,1,1,https://shopee.vn/2?__classic__=1,135,0,0
+1636648846694,1387,Pre Login,200,OK,Thread Group 02: Place Order 2-1,text,true,,149757,222,1,1,https://shopee.vn/,103,0,51
+1636648846694,103,Pre Login-0,307,Temporary Redirect,Thread Group 02: Place Order 2-1,text,true,,349,111,1,1,http://shopee.vn/,103,0,51
+1636648846797,1284,Pre Login-1,200,OK,Thread Group 02: Place Order 2-1,text,true,,149408,111,1,1,https://shopee.vn/,819,0,182
+1636648848082,1113,Post Login,200,OK,Thread Group 02: Place Order 2-1,text,true,,149770,222,1,1,https://shopee.vn/,51,0,0
+1636648848082,51,Post Login-0,307,Temporary Redirect,Thread Group 02: Place Order 2-1,text,true,,349,111,1,1,http://shopee.vn/,51,0,0
+1636648848133,1062,Post Login-1,200,OK,Thread Group 02: Place Order 2-1,text,true,,149421,111,1,1,https://shopee.vn/,708,0,0
+1636648849195,690,Search Product,200,OK,Thread Group 02: Place Order 2-1,text,true,,149757,222,1,1,https://shopee.vn/,51,0,0
+1636648849195,51,Search Product-0,307,Temporary Redirect,Thread Group 02: Place Order 2-1,text,true,,349,111,1,1,http://shopee.vn/,51,0,0
+1636648849247,638,Search Product-1,200,OK,Thread Group 02: Place Order 2-1,text,true,,149408,111,1,1,https://shopee.vn/,334,0,0
+1636648849885,626,Product Detail Page,200,OK,Thread Group 02: Place Order 2-1,text,true,,149770,222,1,1,https://shopee.vn/,51,0,0
+1636648849885,51,Product Detail Page-0,307,Temporary Redirect,Thread Group 02: Place Order 2-1,text,true,,349,111,1,1,http://shopee.vn/,51,0,0
+1636648849936,575,Product Detail Page-1,200,OK,Thread Group 02: Place Order 2-1,text,true,,149421,111,1,1,https://shopee.vn/,328,0,0
+1636648850512,611,Add to cart,200,OK,Thread Group 02: Place Order 2-1,text,true,,149770,222,1,1,https://shopee.vn/,51,0,0
+1636648850512,51,Add to cart-0,307,Temporary Redirect,Thread Group 02: Place Order 2-1,text,true,,349,111,1,1,http://shopee.vn/,51,0,0
+1636648850563,560,Add to cart-1,200,OK,Thread Group 02: Place Order 2-1,text,true,,149421,111,1,1,https://shopee.vn/,265,0,0
+1636648851124,569,Place order,200,OK,Thread Group 02: Place Order 2-1,text,true,,149770,222,1,1,https://shopee.vn/,52,0,0
+1636648851124,52,Place order-0,307,Temporary Redirect,Thread Group 02: Place Order 2-1,text,true,,349,111,1,1,http://shopee.vn/,52,0,0
+1636648851177,516,Place order-1,200,OK,Thread Group 02: Place Order 2-1,text,true,,149421,111,1,1,https://shopee.vn/,272,0,0
+1636648851704,944,Pre Login,200,OK,Thread Group 03: Update Account Info 3-1,text,true,,149770,222,1,1,https://shopee.vn/,105,0,54
+1636648851704,105,Pre Login-0,307,Temporary Redirect,Thread Group 03: Update Account Info 3-1,text,true,,349,111,1,1,http://shopee.vn/,105,0,54
+1636648851811,837,Pre Login-1,200,OK,Thread Group 03: Update Account Info 3-1,text,true,,149421,111,1,1,https://shopee.vn/,364,0,192
+1636648852648,181,Post Login,200,OK,Thread Group 03: Update Account Info 3-1,text,true,,28181,222,1,1,https://shopee.vn/,50,0,0
+1636648852648,50,Post Login-0,307,Temporary Redirect,Thread Group 03: Update Account Info 3-1,text,true,,349,111,1,1,http://shopee.vn/,50,0,0
+1636648852698,131,Post Login-1,200,OK,Thread Group 03: Update Account Info 3-1,text,true,,27832,111,1,1,https://shopee.vn/,72,0,0
+1636648852829,911,Account management,200,OK,Thread Group 03: Update Account Info 3-1,text,true,,149770,222,1,1,https://shopee.vn/,51,0,0
+1636648852829,51,Account management-0,307,Temporary Redirect,Thread Group 03: Update Account Info 3-1,text,true,,349,111,1,1,http://shopee.vn/,51,0,0
+1636648852880,860,Account management-1,200,OK,Thread Group 03: Update Account Info 3-1,text,true,,149421,111,1,1,https://shopee.vn/,515,0,0
+1636648853741,1004,Edit account information,200,OK,Thread Group 03: Update Account Info 3-1,text,true,,149770,222,1,1,https://shopee.vn/,51,0,0
+1636648853741,51,Edit account information-0,307,Temporary Redirect,Thread Group 03: Update Account Info 3-1,text,true,,349,111,1,1,http://shopee.vn/,51,0,0
+1636648853792,953,Edit account information-1,200,OK,Thread Group 03: Update Account Info 3-1,text,true,,149421,111,1,1,https://shopee.vn/,651,0,0

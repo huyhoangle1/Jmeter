@@ -1,0 +1,44 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1636648876124,278,Pre Login,200,OK,Thread Group 01 : Add wishlist 1-1,text,true,,149770,222,1,1,https://shopee.vn/,32,0,25
+1636648876124,32,Pre Login-0,307,Temporary Redirect,Thread Group 01 : Add wishlist 1-1,text,true,,349,111,1,1,http://shopee.vn/,32,0,25
+1636648876157,245,Pre Login-1,200,OK,Thread Group 01 : Add wishlist 1-1,text,true,,149421,111,1,1,https://shopee.vn/,187,0,34
+1636648876403,300,Post Login,200,OK,Thread Group 01 : Add wishlist 1-1,text,true,,149757,222,1,1,https://shopee.vn/,7,0,0
+1636648876403,7,Post Login-0,307,Temporary Redirect,Thread Group 01 : Add wishlist 1-1,text,true,,349,111,1,1,http://shopee.vn/,7,0,0
+1636648876410,293,Post Login-1,200,OK,Thread Group 01 : Add wishlist 1-1,text,true,,149408,111,1,1,https://shopee.vn/,244,0,0
+1636648876703,177,Product Detail Page,200,OK,Thread Group 01 : Add wishlist 1-1,text,true,,149770,222,1,1,https://shopee.vn/,7,0,0
+1636648876703,7,Product Detail Page-0,307,Temporary Redirect,Thread Group 01 : Add wishlist 1-1,text,true,,349,111,1,1,http://shopee.vn/,7,0,0
+1636648876710,170,Product Detail Page-1,200,OK,Thread Group 01 : Add wishlist 1-1,text,true,,149421,111,1,1,https://shopee.vn/,129,0,0
+1636648876880,356,Add to wishlist,200,OK,Thread Group 01 : Add wishlist 1-1,text,true,,37440,350,1,1,https://shopee.vn/2?__classic__=1,7,0,0
+1636648876880,7,Add to wishlist-0,307,Temporary Redirect,Thread Group 01 : Add wishlist 1-1,text,true,,350,112,1,1,http://shopee.vn/2,7,0,0
+1636648876887,227,Add to wishlist-1,302,Found,Thread Group 01 : Add wishlist 1-1,text,true,,479,112,1,1,https://shopee.vn/2,227,0,0
+1636648877114,122,Add to wishlist-2,200,OK,Thread Group 01 : Add wishlist 1-1,text,true,,36611,126,1,1,https://shopee.vn/2?__classic__=1,112,0,0
+1636648877239,357,Pre Login,200,OK,Thread Group 02: Place Order 2-1,text,true,,149770,222,1,1,https://shopee.vn/,17,0,9
+1636648877239,17,Pre Login-0,307,Temporary Redirect,Thread Group 02: Place Order 2-1,text,true,,349,111,1,1,http://shopee.vn/,17,0,9
+1636648877257,339,Pre Login-1,200,OK,Thread Group 02: Place Order 2-1,text,true,,149421,111,1,1,https://shopee.vn/,308,0,44
+1636648877596,168,Post Login,200,OK,Thread Group 02: Place Order 2-1,text,true,,149757,222,1,1,https://shopee.vn/,7,0,0
+1636648877596,7,Post Login-0,307,Temporary Redirect,Thread Group 02: Place Order 2-1,text,true,,349,111,1,1,http://shopee.vn/,7,0,0
+1636648877603,161,Post Login-1,200,OK,Thread Group 02: Place Order 2-1,text,true,,149408,111,1,1,https://shopee.vn/,133,0,0
+1636648877764,260,Search Product,200,OK,Thread Group 02: Place Order 2-1,text,true,,149757,222,1,1,https://shopee.vn/,7,0,0
+1636648877764,7,Search Product-0,307,Temporary Redirect,Thread Group 02: Place Order 2-1,text,true,,349,111,1,1,http://shopee.vn/,7,0,0
+1636648877771,253,Search Product-1,200,OK,Thread Group 02: Place Order 2-1,text,true,,149408,111,1,1,https://shopee.vn/,222,0,0
+1636648878025,151,Product Detail Page,200,OK,Thread Group 02: Place Order 2-1,text,true,,149757,222,1,1,https://shopee.vn/,6,0,0
+1636648878025,6,Product Detail Page-0,307,Temporary Redirect,Thread Group 02: Place Order 2-1,text,true,,349,111,1,1,http://shopee.vn/,6,0,0
+1636648878032,144,Product Detail Page-1,200,OK,Thread Group 02: Place Order 2-1,text,true,,149408,111,1,1,https://shopee.vn/,118,0,0
+1636648878177,164,Add to cart,200,OK,Thread Group 02: Place Order 2-1,text,true,,149770,222,1,1,https://shopee.vn/,6,0,0
+1636648878177,6,Add to cart-0,307,Temporary Redirect,Thread Group 02: Place Order 2-1,text,true,,349,111,1,1,http://shopee.vn/,6,0,0
+1636648878183,158,Add to cart-1,200,OK,Thread Group 02: Place Order 2-1,text,true,,149421,111,1,1,https://shopee.vn/,131,0,0
+1636648878342,317,Place order,200,OK,Thread Group 02: Place Order 2-1,text,true,,149770,222,1,1,https://shopee.vn/,7,0,0
+1636648878342,7,Place order-0,307,Temporary Redirect,Thread Group 02: Place Order 2-1,text,true,,349,111,1,1,http://shopee.vn/,7,0,0
+1636648878349,310,Place order-1,200,OK,Thread Group 02: Place Order 2-1,text,true,,149421,111,1,1,https://shopee.vn/,279,0,0
+1636648878662,368,Pre Login,200,OK,Thread Group 03: Update Account Info 3-1,text,true,,149770,222,1,1,https://shopee.vn/,15,0,8
+1636648878662,15,Pre Login-0,307,Temporary Redirect,Thread Group 03: Update Account Info 3-1,text,true,,349,111,1,1,http://shopee.vn/,15,0,8
+1636648878678,352,Pre Login-1,200,OK,Thread Group 03: Update Account Info 3-1,text,true,,149421,111,1,1,https://shopee.vn/,321,0,33
+1636648879030,301,Post Login,200,OK,Thread Group 03: Update Account Info 3-1,text,true,,149770,222,1,1,https://shopee.vn/,7,0,0
+1636648879030,8,Post Login-0,307,Temporary Redirect,Thread Group 03: Update Account Info 3-1,text,true,,349,111,1,1,http://shopee.vn/,7,0,0
+1636648879038,293,Post Login-1,200,OK,Thread Group 03: Update Account Info 3-1,text,true,,149421,111,1,1,https://shopee.vn/,258,0,0
+1636648879331,160,Account management,200,OK,Thread Group 03: Update Account Info 3-1,text,true,,149770,222,1,1,https://shopee.vn/,7,0,0
+1636648879331,7,Account management-0,307,Temporary Redirect,Thread Group 03: Update Account Info 3-1,text,true,,349,111,1,1,http://shopee.vn/,7,0,0
+1636648879338,153,Account management-1,200,OK,Thread Group 03: Update Account Info 3-1,text,true,,149421,111,1,1,https://shopee.vn/,122,0,0
+1636648879492,160,Edit account information,200,OK,Thread Group 03: Update Account Info 3-1,text,true,,149770,222,1,1,https://shopee.vn/,7,0,0
+1636648879492,7,Edit account information-0,307,Temporary Redirect,Thread Group 03: Update Account Info 3-1,text,true,,349,111,1,1,http://shopee.vn/,7,0,0
+1636648879499,153,Edit account information-1,200,OK,Thread Group 03: Update Account Info 3-1,text,true,,149421,111,1,1,https://shopee.vn/,127,0,0

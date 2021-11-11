@@ -1,0 +1,10 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1636648919008,71,Index.html,200,OK,Thread Group 1-1,text,true,,13085,129,1,1,http://jmeter.apache.org/index.html,70,0,35
+1636648919082,39,/changes.html,200,OK,Thread Group 1-1,text,true,,20321,131,1,1,http://jmeter.apache.org/changes.html,32,0,0
+1636648919123,231,/usermanual/component_reference.html,200,OK,Thread Group 1-1,text,true,,734893,154,1,1,http://jmeter.apache.org/usermanual/component_reference.html,32,0,0
+1636648919356,33,HTTP Request,200,OK,Thread Group 1-1,text,true,,13085,119,1,1,http://jmeter.apache.org/,33,0,0
+1636648919391,34,HTTP Request,200,OK,Thread Group 1-1,text,true,,13085,119,1,1,http://jmeter.apache.org/,34,0,0
+1636648919426,36,/changes.html,200,OK,Thread Group 1-1,text,true,,20321,131,1,1,http://jmeter.apache.org/changes.html,35,0,0
+1636648919464,33,Index.html,200,OK,Thread Group 1-1,text,true,,13086,129,1,1,http://jmeter.apache.org/index.html,33,0,0
+1636648919500,161,/usermanual/component_reference.html,200,OK,Thread Group 1-1,text,true,,734893,154,1,1,http://jmeter.apache.org/usermanual/component_reference.html,35,0,0
+1636648919663,35,/changes.html,200,OK,Thread Group 1-1,text,true,,20322,131,1,1,http://jmeter.apache.org/changes.html,33,0,0
